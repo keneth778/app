@@ -1,0 +1,73 @@
+/* Estilos base */
+html {
+    font-size: 16px; /* Tamaño de fuente base */
+}
+
+.your {
+    position: relative;
+    width: 100%; /* Ancho completo para adaptarse a diferentes tamaños de pantalla */
+    max-width: 62.5rem; /* Ancho máximo en rem */
+    margin: 0 auto; /* Centra el contenido en pantallas más grandes */
+    padding: 0 1.25rem; /* Añade un poco de espacio alrededor del contenido en pantallas más pequeñas */
+}
+
+.your img {
+    display: block; /* Asegura que la imagen no tenga espacio extra debajo */
+    margin: 3.75rem auto 1.25rem; /* Centra la imagen y agrega espacio alrededor */
+}
+
+.your img:nth-child(2){
+    margin-top: 1.25rem; /* Añade espacio superior al segundo img */
+}
+
+.your img:nth-child(3){
+    margin-left: 50%; /* Centra horizontalmente el tercer img */
+    transform: translateX(-50%);
+}
+
+.your p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6D5758;
+    font-size: 1.875rem; 
+    margin: 1.25rem auto;
+    margin-left: 340px;
+}
+
+.shop img{
+    display: block; 
+    margin: 1.25rem auto; 
+    max-width: 100%; 
+}
+.bottom{
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media screen and (max-width: 48rem) {
+    .your img {
+        margin-top: 2.5rem; /* Reduce el espacio superior para dispositivos más pequeños */
+    }
+
+    .your img:nth-child(2){
+        margin-top: 0.625rem; /* Ajusta el margen superior específico para el segundo img en dispositivos móviles */
+    }
+
+    .your img:nth-child(3){
+        margin-left: 1.25rem; /* Ajusta el margen izquierdo del tercer img para dispositivos móviles */
+        transform: none; /* Elimina la transformación */
+    }
+
+    .your p {
+        font-size: 1.25rem;
+        margin-left: auto; /* Reduce el tamaño de fuente para dispositivos más pequeños */
+    }
+
+    .shop img{
+        margin-left: 1.25rem; /* Ajusta el margen izquierdo de la imagen de la tienda para dispositivos móviles */
+    }
+}
+
+
+
+
